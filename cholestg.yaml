@@ -1,0 +1,61 @@
+---
+data_dictionary: cholestg.txt
+
+source: 
+  Gordon K. Smyth. Australian Data and Story Library (OzDASL). 
+  OzDASL is a library of data sets and associated stories. It is intended as 
+  a resource for teachers of statistics in Australia and New Zealand and 
+  elsewhere. Emphasis is given to data sets with an Australasian context, 
+  although interesting data sets from anywhere in the world are included.
+
+description:
+  This study was conducted at a major north eastern American medical centre 
+  regarding blood cholesterol levels and heart-attack incidents. A total of 
+  28 heart-attack patients had their cholesterol levels measured two days, 
+  4 days, and 14 days after the heart attack. In addition, cholesterol levels 
+  were recorded for a control group of 30 people who had not had a heart attack.
+  
+additional_description:
+  https://gksmyth.github.io/ozdasl/general/cholest.html
+  
+download_url: 
+  text-format: https://gksmyth.github.io/ozdasl/general/cholestg.txt
+
+copyright:
+  Unknown. We should be able to use this data for individual educational 
+  purposes under the Fair Use guidelines of U.S. copyright law.
+
+format: 
+  txt: tab-delimited
+
+varnames: 
+  first row of data
+
+missing_value_code: 
+  "NA"
+
+size:  
+  rows: 114
+  columns: 4
+
+vars:
+  Patient:
+    label: Patient number
+    scale: ratio
+    
+  Group:
+    label: Patient group
+    scale: nominal
+    value:
+      1: heart-attack patient
+      2: control
+
+  Day:
+    label: Numbers of days since heart attack
+    units: day
+    scale: ratio
+  
+  Cholest:
+    label: Cholesterol level
+    units: presumably mg/dL of blood
+    scale: ratio
